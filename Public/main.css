@@ -69,6 +69,9 @@ body p{
     text-align: left;
 }
 
+
+/*Events Page*/
+
 .event-div{
     text-align: left;
     margin-top: 50px;
@@ -83,3 +86,28 @@ body p{
     position: relative;
     bottom: 0px;
 } */
+
+/*Code Blocks Page*/
+.code-block-div{
+    text-align: left;
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+
+}
+
+.code-block-div h2 {
+    grid-column: span 2;
+}
+
+.code-block-div p {
+    margin: 0;
+}
+
+.live-html-asset-block{
+    align-items: center;
+    background-color: black;
+    height: auto;
+}
