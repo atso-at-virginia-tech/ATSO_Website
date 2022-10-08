@@ -151,4 +151,15 @@ code, pre {
 
 pre {
     border: black solid 1px;
+    position: relative;
 }
+
+.copy-image {
+    width: 20px;   
+    height: 29px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+}
+
