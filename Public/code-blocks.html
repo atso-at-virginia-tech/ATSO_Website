@@ -35,14 +35,36 @@
           </div>
           <h3>HTML</h3>
           <pre>
-            <code>&lt;button class="live-html-asset-accessible-button"&gt;Submit&lt;/button&gt;</code>
+            <code>&lt;button class="accessible-button"&gt;Submit&lt;/button&gt;</code>
               
-              <img class="copy-image" src="Assets/copy.png" onclick="copyText('text')">
+              <img class="copy-image" src="Assets/copy.png" onclick="copyText('accessible-button-html')">
           </pre>
-          <h3>CSS</h3>
+          <h3><abbr title=”Cascading Style Sheets”>CSS</abbr></h3>
           <pre>
-            <code>.live-html-asset-accessible-button:hover,<br>.live-html-asset-accessible-button::selection {<br>box-shadow: black 3px 3px;<br>}<br>.live-html-asset-accessible-button:active {<br>box-shadow: none;<br>}</code>
-            <img class="copy-image" src="Assets/copy.png">
+            <code>.accessible-button {<br>&emsp;&emsp;background-color: #8C1E41;<br>&emsp;&emsp;color: #FFF;<br>&emsp;&emsp;padding: 10px;<br>&emsp;&emsp;cursor: pointer;<br>&emsp;&emsp;box-shadow: black 2px 2px;<br>}<br><br>.accessible-button:hover,<br>.accessible-button::selection {<br>&emsp;&emsp;box-shadow: black 3px 3px;<br>}<br><br>.accessible-button:active {<br>&emsp;&emsp;box-shadow: none;<br>}</code>
+            <img class="copy-image" src="Assets/copy.png" onclick="copyText('accessible-button-css')">
+          </pre>
+        </div>
+        <div class="code-block-div">
+          <h2>Accessible Toggle Switch</h2>
+          <div class="two-column">
+            <div class="live-html-asset-block">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <p>This button achieves accessibility through it's high contrast label, selection colors for tab navigations and ...</p>
+          </div>
+          <h3>HTML</h3>
+          <pre>
+            <code>&lt;label class="switch"&gt;<br>&emsp;&emsp;&lt;input type="checkbox"&gt;<br>&emsp;&emsp;&lt;span class="slider round"&lt;/span&gt;<br>&lt;/button&gt;</code>
+              <img class="copy-image" src="Assets/copy.png" onclick="copyText('accessible-toggle-html')">
+          </pre>
+          <h3><abbr title=”Cascading Style Sheets”>CSS</abbr></h3>
+          <pre>
+            <code>/*Accessible Toggle Switch via W3 Schools*/<br>/* The switch - the box around the slider */<br>.switch {<br>&emsp;&emsp;position: relative;<br>&emsp;&emsp;display: inline-block;<br>&emsp;&emsp;width: 60px;<br>&emsp;&emsp;height: 34px;<br>}<br><br>/* Hide default HTML checkbox */<br>.switch input {<br>&emsp;&emsp;opacity: 0;<br>&emsp;&emsp;width: 0;<br>&emsp;&emsp;height: 0;<br>}<br><br>/* The slider */<br>.slider {<br>&emsp;&emsp;position: absolute;<br>&emsp;&emsp;cursor: pointer;<br>&emsp;&emsp;top: 0;<br>&emsp;&emsp;left: 0;<br>&emsp;&emsp;right: 0;<br>&emsp;&emsp;bottom: 0;<br>&emsp;&emsp;background-color: #ccc;<br>&emsp;&emsp;-webkit-transition: .4s;<br>&emsp;&emsp;transition: .4s;<br>}<br><br>.slider:before {<br>&emsp;&emsp;position: absolute;<br>&emsp;&emsp;content: "";<br>&emsp;&emsp;height: 26px;<br>&emsp;&emsp;width: 26px;<br>&emsp;&emsp;left: 4px;<br>&emsp;&emsp;bottom: 4px;<br>&emsp;&emsp;background-color: white;<br>&emsp;&emsp;-webkit-transition: .4s;<br>&emsp;&emsp;transition: .4s;<br>}<br><br>input:checked + .slider {<br>&emsp;&emsp;background-color: #2196F3;<br>}<br><br>input:focus + .slider {<br>&emsp;&emsp;box-shadow: 0 0 1px #2196F3;<br>}<br><br>input:checked + .slider:before {<br>&emsp;&emsp;-webkit-transform: translateX(26px);<br>&emsp;&emsp;-ms-transform: translateX(26px);<br>&emsp;&emsp;transform: translateX(26px);<br>}<br><br>/* Rounded sliders */<br>.slider.round {<br>&emsp;&emsp;border-radius: 34px;<br>}<br><br>.slider.round:before {<br>&emsp;&emsp;border-radius: 50%;<br>}</code>
+            <img class="copy-image" src="Assets/copy.png" onclick="copyText('accessible-toggle-css')">
           </pre>
         </div>
     </main>

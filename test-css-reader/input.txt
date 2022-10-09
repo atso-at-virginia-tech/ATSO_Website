@@ -1,9 +1,4 @@
-const copyTexts = {
-    "accessible-button-html": "<button class='accessible-button'>Submit</button>",
-    "accessible-button-css": ".accessible-button {\n\tbackground-color: #8C1E41;\n\tpadding: 10px;\n\tcursor: pointer;\n\tbox-shadow: black 2px 2xp;\n}\n\n.accessible-button:hover, .accessible-button::selection {\n\tbox-shadow: black 3px 3px;\n}\n\n.accessible-button:active {\n\tbox-shadow: none;\n}",
-    "accessible-toggle-html": "<label class='switch'>\n\t<input type='checkbox'>\n\t<span class='slider round'></span>\n</button>",
-    "accessible-toggle-css": `
-    /*Accessible Toggle Switch via W3 Schools*/
+/*Accessible Toggle Switch via W3 Schools*/
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -65,11 +60,4 @@ input:checked + .slider:before {
   
 .slider.round:before {
     border-radius: 50%;
-}
-`,
-}
-
-
-function copyText(copyText){
-    navigator.clipboard.writeText(copyTexts[copyText]);
 }
